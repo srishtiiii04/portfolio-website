@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srishti Duggal | Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Progress bar on scroll -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">SD<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#responsibility" class="nav-link">Leadership</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="icon-sun">☀</i><i class="icon-moon">☾</i>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" id="home">
+  <div class="hero-content">
+    <p class="hero-greeting reveal">Hi, my name is</p>
+    <h1 class="hero-name reveal">Srishti Duggal</h1>
+    <h2 class="hero-role reveal">
+      I work on <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+    </h2>
+    <p class="hero-desc reveal">
+      Computer Science graduate (CGPA: 8.55) currently working as a Technology Analyst at
+      Morgan Stanley. I mostly work on AI/ML projects with a growing interest in agentic AI
+      systems, alongside a solid background in full-stack development.
+    </p>
+    <div class="hero-buttons reveal">
+      <a href="#experience" class="btn btn-primary">View Experience</a>
+      <a href="#" class="btn btn-secondary" id="downloadResume">Download Resume</a>
+    </div>
+    <div class="hero-socials reveal">
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:srishti.duggal@example.com" aria-label="Email">Email</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="num">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Computer Science graduate who completed my degree with an
+            <strong> 8.55 CGPA</strong>. I currently work as a
+            <strong> Technology Analyst at Morgan Stanley</strong>, where most of my work is
+            centered around AI/ML — and I've been increasingly drawn towards
+            <strong> agentic AI</strong> and how autonomous systems can be built to reason and
+            act on their own. Alongside this, I also have hands-on experience with
+            <strong> full-stack development</strong>.
+          </p>
+          <p>
+            During college, I served as the <strong>General Secretary of the Entrepreneurship
+            Cell</strong>, where I got to combine my technical interests with leadership and
+            organizing large-scale events.
+          </p>
+          <p>
+            Outside of work, I enjoy traveling, photography and cinematography, and I love
+            networking and meeting new people.
+          </p>
+        </div>
+        <div class="about-facts reveal">
+          <div class="fact-row"><span>CGPA</span><strong>8.55</strong></div>
+          <div class="fact-row"><span>Current Role</span><strong>Technology Analyst, Morgan Stanley</strong></div>
+          <div class="fact-row"><span>Focus Areas</span><strong>AI/ML, Agentic AI, Full-Stack Dev</strong></div>
+          <div class="fact-row"><span>Leadership</span><strong>General Secretary, E-Cell</strong></div>
+          <div class="fact-row"><span>Hobbies</span><strong>Travel, Photography, Cinematography, Networking</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="num">02.</span> Skills</h2>
+
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="aiml">AI / ML</button>
+        <button class="tab-btn" data-tab="webdev">Full Stack Dev</button>
+        <button class="tab-btn" data-tab="languages">Languages</button>
+        <button class="tab-btn" data-tab="tools">Tools &amp; Platforms</button>
+      </div>
+
+      <div class="tab-content active" id="aiml">
+        <div class="skill-bar-group">
+          <div class="skill-bar" data-level="85"><div class="skill-info"><span>Machine Learning</span><span class="pct">85%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="75"><div class="skill-info"><span>Deep Learning</span><span class="pct">75%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="70"><div class="skill-info"><span>Agentic AI / LLM Agents</span><span class="pct">70%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="80"><div class="skill-info"><span>Data Preprocessing &amp; Analysis</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="webdev">
+        <div class="skill-bar-group">
+          <div class="skill-bar" data-level="80"><div class="skill-info"><span>HTML / CSS</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="75"><div class="skill-info"><span>React.js</span><span class="pct">75%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="75"><div class="skill-info"><span>Node.js / Express</span><span class="pct">75%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="70"><div class="skill-info"><span>SQL / MongoDB</span><span class="pct">70%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="languages">
+        <div class="skill-bar-group">
+          <div class="skill-bar" data-level="90"><div class="skill-info"><span>Python</span><span class="pct">90%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="80"><div class="skill-info"><span>Java</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="70"><div class="skill-info"><span>C++</span><span class="pct">70%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="75"><div class="skill-info"><span>JavaScript</span><span class="pct">75%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tools">
+        <div class="skill-bar-group">
+          <div class="skill-bar" data-level="85"><div class="skill-info"><span>Git &amp; GitHub</span><span class="pct">85%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="60"><div class="skill-info"><span>Docker</span><span class="pct">60%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="65"><div class="skill-info"><span>Linux / Bash</span><span class="pct">65%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-level="70"><div class="skill-info"><span>VS Code / Postman</span><span class="pct">70%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-tags reveal">
+        <span class="tag">Problem Solving</span>
+        <span class="tag">Team Collaboration</span>
+        <span class="tag">Public Speaking</span>
+        <span class="tag">Event Management</span>
+        <span class="tag">Networking</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="num">03.</span> Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2026 – Present</span>
+            <h3>Technology Analyst</h3>
+            <h4>Morgan Stanley</h4>
+            <ul>
+              <li>Work on AI/ML-driven solutions, with a growing focus on exploring agentic AI
+                systems for automating internal workflows.</li>
+              <li>Collaborate with cross-functional teams to build and maintain full-stack
+                applications supporting business-critical processes.</li>
+              <li>Work across the stack — from data pipelines and model integration to
+                front-end interfaces — to deliver reliable, scalable solutions.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>AI/ML</span><span>Agentic AI</span><span>Full-Stack Dev</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Positions of Responsibility -->
+  <section class="section section-alt" id="responsibility">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="num">04.</span> Positions of Responsibility</h2>
+      <div class="por-grid">
+
+        <div class="por-card reveal">
+          <div class="por-icon">◆</div>
+          <h3>General Secretary</h3>
+          <span class="por-date">Entrepreneurship Cell</span>
+          <p>Led the Entrepreneurship Cell's core team, organizing events, startup talks and
+            competitions to foster an entrepreneurial mindset among students — managing team
+            coordination, sponsorships and outreach.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="num">05.</span> Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <h3>Bachelor's Degree in Computer Science</h3>
+          <h4>Your University Name</h4>
+          <span class="edu-date">CGPA: 8.55 / 10</span>
+          <p>Coursework and interests spanning Machine Learning, Data Structures &amp;
+            Algorithms, and Software Engineering, alongside active involvement with the
+            Entrepreneurship Cell.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner contact-inner">
+      <h2 class="section-title center"><span class="num">06.</span> Get In Touch</h2>
+      <p class="contact-sub reveal">
+        Always happy to connect, talk about AI/ML and agentic AI, or just meet new people.
+        Feel free to reach out!
+      </p>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Your Email</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed &amp; built by <span>Srishti Duggal</span> · &copy; <span id="year"></span></p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
